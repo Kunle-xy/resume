@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-black/95 text-white font-poppings scroll-smooth;
+  }
+}
+
+@layer utilities {
+  /* TYPOGRAPHY */
+  .flex-center-col {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  .flex-center-row {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex flex-row justify-between items-center;
+  }
+
+
+}
